@@ -46,24 +46,23 @@ One task = one commit. Commit message = task number + short name (e.g. `3.1 deat
 ## Block 3 — Death & respawn (GDD §8)
 
 - [x] **3.1** Guard `OnDeath` so it fires once; bind it in `BP_Diver` → disable input → delay → reload level
-- [ ] **3.2** Kill volume under the level so falling off = death
-- [ ] **3.3** `BP_Checkpoint` actor (box overlap, one-shot, visual)
-- [ ] **3.4** `GI_HeavenBelow` Game Instance stores last checkpoint transform; respawn there instead of level start
-- [ ] **3.5** I-frames — use existing `bIsInvulnerable` after a hit; add hit flash
+- [x] **3.2** Kill volume under the level so falling off = death
+- [x] **3.3** `BP_Checkpoint` actor (box overlap, one-shot, visual)
+- [x] **3.4** `GI_HeavenBelow` Game Instance stores last checkpoint transform; respawn there instead of level start
+- [x] **3.5** I-frames — make `bIsInvulnerable` actually block damage for 1s after a hit
 
 ## Block 4 — HUD skeleton (GDD §9)
 
-- [ ] **4.1** `WBP_HUD` widget; add to viewport from `BP_ThirdPersonPlayerController`
-- [ ] **4.2** Health bar bound to `OnHealthChanged`
-- [ ] **4.3** Checkpoint-reached toast
+- [x] **4.1** `WBP_HUD` widget; add to viewport from `BP_ThirdPersonPlayerController`
+- [x] **4.2** Health bar bound to `OnHealthChanged`
+- [x] **4.3** Checkpoint-reached toast
 
 ## Block 5 — Oxygen (GDD §7, §8)
 
-- [ ] **5.1** `BPC_Oxygen` component — `MaxOxygen`, `CurrentOxygen`, `DepletionRate`
-- [ ] **5.2** Tick depletion; `OnOxygenChanged` dispatcher
-- [ ] **5.3** Oxygen bar on HUD (largest / most prominent element)
-- [ ] **5.4** Zero oxygen → same death path as 3.1
-- [ ] **5.5** `BP_AirPocket` actor refills on overlap; checkpoints refill too
+- [x] **5.1** `BPC_Oxygen` component — variables, tick depletion, `OnOxygenChanged` dispatcher, added to `BP_Diver`
+- [ ] **5.2** Oxygen bar on HUD (largest / most prominent element)
+- [ ] **5.3** Zero oxygen → same death path as 3.1
+- [ ] **5.4** `BP_AirPocket` actor refills on overlap; checkpoints refill too
 
 ## Block 6 — Echoes (GDD §3, §9)
 
@@ -108,6 +107,7 @@ One task = one commit. Commit message = task number + short name (e.g. `3.1 deat
 - [ ] **11.1** Pause menu (Esc) — resume, restart, quit
 - [ ] **11.2** Swap breakable platform to Chaos destruction
 - [ ] **11.3** Niagara — dust motes, hazard FX
+- [ ] **11.7** Hit feedback — mesh flash / camera shake on damage
 - [ ] **11.4** Surface Ruins post-process volume + Lumen mood pass
 - [ ] **11.5** Royalty-free ambient audio + hazard SFX
 - [ ] **11.6** Strip the mobile touch path — `BPI_TouchInterface` off `BP_Diver`, touch widget off the PlayerController (PC-only per §1)
