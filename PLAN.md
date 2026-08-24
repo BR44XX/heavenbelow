@@ -60,16 +60,15 @@ One task = one commit. Commit message = task number + short name (e.g. `3.1 deat
 ## Block 5 — Oxygen (GDD §7, §8)
 
 - [x] **5.1** `BPC_Oxygen` component — variables, tick depletion, `OnOxygenChanged` dispatcher, added to `BP_Diver`
-- [ ] **5.2** Oxygen bar on HUD (largest / most prominent element)
-- [ ] **5.3** Zero oxygen → same death path as 3.1
-- [ ] **5.4** `BP_AirPocket` actor refills on overlap; checkpoints refill too
+- [x] **5.2** Oxygen bar on HUD (largest / most prominent element)
+- [x] **5.3** Zero oxygen → same death path as 3.1
+- [x] **5.4** `BP_AirPocket` actor refills on overlap; checkpoints refill too
 
 ## Block 6 — Echoes (GDD §3, §9)
 
-- [ ] **6.1** `BP_Echo` actor — overlap, pickup FX, destroy
-- [ ] **6.2** Echo count stored on `GI_HeavenBelow`
-- [ ] **6.3** Echo counter on HUD
-- [ ] **6.4** Place 3 Echoes off the critical path in Level 1
+- [ ] **6.1** `BP_Echo` actor — unique ID, records into `GI_HeavenBelow`, destroys itself, stays collected after respawn
+- [ ] **6.2** Echo counter on HUD
+- [ ] **6.3** Place 3 Echoes off the critical path in Level 1
 
 ## Block 7 — Interact & light puzzles (GDD §7)
 
