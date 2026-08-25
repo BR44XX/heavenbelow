@@ -66,9 +66,8 @@ One task = one commit. Commit message = task number + short name (e.g. `3.1 deat
 
 ## Block 6 — Echoes (GDD §3, §9)
 
-- [ ] **6.1** `BP_Echo` actor — unique ID, records into `GI_HeavenBelow`, destroys itself, stays collected after respawn
-- [ ] **6.2** Echo counter on HUD
-- [ ] **6.3** Place 3 Echoes off the critical path in Level 1
+- [x] **6.1** `BP_Echo` actor — unique ID, records into `GI_HeavenBelow`, destroys itself, stays collected after respawn
+- [x] **6.2** Echo counter on HUD
 
 ## Block 7 — Interact & light puzzles (GDD §7)
 
@@ -100,6 +99,7 @@ One task = one commit. Commit message = task number + short name (e.g. `3.1 deat
 - [ ] **10.3** Denizen + key + locked door gate
 - [ ] **10.4** First tool pickup at the level end
 - [ ] **10.5** Checkpoint spacing pass + oxygen pacing pass
+- [ ] **10.6** Reposition the Echoes so each needs a real detour off the critical path
 
 ## Block 11 — Presentation pass (GDD §9, §10, §14)
 
