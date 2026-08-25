@@ -17,7 +17,7 @@ One task = one commit. Commit message = task number + short name (e.g. `3.1 deat
 | §4 | Interact (E) | **not started** |
 | §4 | Attack (LMB) | **not started** |
 | §4 | Pause (Esc) | **not started** |
-| §4 | Gamepad: slide, interact, attack, pause | **not started** |
+| §13 | Gamepad support | **out of scope** — keyboard & mouse only this build |
 | §7 | Health + damage | done — `BPC_Health` |
 | §7 | Spike trap | done, 1 placed |
 | §7 | Breakable platform | done, 1 placed |
@@ -71,15 +71,16 @@ One task = one commit. Commit message = task number + short name (e.g. `3.1 deat
 
 ## Block 7 — Interact & light puzzles (GDD §7)
 
-- [ ] **7.1** `IA_Interact` (E / gamepad X) added to `IMC_Default`
-- [ ] **7.2** `BPI_Interactable` Blueprint Interface; trace from Diver, show prompt
-- [ ] **7.3** `BP_Torch` — interact to light, casts a point light
-- [ ] **7.4** `BP_Crystal` — lit by a torch, reveals a hidden platform
-- [ ] **7.5** `BP_Lever` — interact to move a platform / open a gate
+- [x] **7.1** `IA_Interact` (E) added to `IMC_Default`
+- [x] **7.2** `BPI_Interactable` interface + `InteractRange` sphere on the Diver tracking `CurrentInteractable`; E calls `Interact`
+- [x] **7.3** "Press E" prompt on the HUD
+- [x] **7.4** `BP_Torch` — interact to light, casts a point light
+- [ ] **7.5** `BP_Crystal` — lit by a torch, reveals a hidden platform
+- [ ] **7.6** `BP_Lever` — interact to move a platform / open a gate
 
 ## Block 8 — Denizen, key, locked door (GDD §6.2, §7, §11)
 
-- [ ] **8.1** `IA_Attack` (LMB / right trigger); melee montage on `BP_Diver`
+- [ ] **8.1** `IA_Attack` (LMB); melee montage on `BP_Diver`
 - [ ] **8.2** `BP_Denizen` — `BPC_Health`, simple chase, damages on contact
 - [ ] **8.3** Denizen drops `BP_Key` on death
 - [ ] **8.4** `BP_LockedDoor` — opens only if key held
@@ -87,7 +88,7 @@ One task = one commit. Commit message = task number + short name (e.g. `3.1 deat
 
 ## Block 9 — Climb / ledge grab (GDD §4, §14)
 
-- [ ] **9.1** `IA_Climb` (W / stick up)
+- [ ] **9.1** `IA_Climb` (W)
 - [ ] **9.2** Forward + downward traces to detect a ledge
 - [ ] **9.3** Hang state, then mantle up
 - [ ] **9.4** Climbable surface tag/channel so only marked geometry works
