@@ -75,7 +75,7 @@ One task = one commit. Commit message = task number + short name (e.g. `3.1 deat
 - [x] **7.2** `BPI_Interactable` interface + `InteractRange` sphere on the Diver tracking `CurrentInteractable`; E calls `Interact`
 - [x] **7.3** "Press E" prompt on the HUD
 - [x] **7.4** `BP_Torch` — interact to light, casts a point light
-- [ ] **7.5** `BP_Crystal` — lit by a torch, reveals a hidden platform
+- [x] **7.5** `BP_Crystal` — lit by a torch, reveals a hidden platform
 - [ ] **7.6** `BP_Lever` — interact to move a platform / open a gate
 
 ## Block 8 — Denizen, key, locked door (GDD §6.2, §7, §11)
