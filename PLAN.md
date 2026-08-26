@@ -76,15 +76,16 @@ One task = one commit. Commit message = task number + short name (e.g. `3.1 deat
 - [x] **7.3** "Press E" prompt on the HUD
 - [x] **7.4** `BP_Torch` — interact to light, casts a point light
 - [x] **7.5** `BP_Crystal` — lit by a torch, reveals a hidden platform
-- [ ] **7.6** `BP_Lever` — interact to move a platform / open a gate
+- [x] **7.6** `BP_Lever` — interact to move a platform / open a gate
 
 ## Block 8 — Denizen, key, locked door (GDD §6.2, §7, §11)
 
-- [ ] **8.1** `IA_Attack` (LMB); melee montage on `BP_Diver`
+- [ ] **8.1** `IA_Attack` (LMB) + `AM_Attack` montage plays on the Diver
 - [ ] **8.2** `BP_Denizen` — `BPC_Health`, simple chase, damages on contact
-- [ ] **8.3** Denizen drops `BP_Key` on death
-- [ ] **8.4** `BP_LockedDoor` — opens only if key held
-- [ ] **8.5** Equipped-tool indicator on HUD
+- [ ] **8.3** Attack damages the Denizen (sphere check on swing)
+- [ ] **8.4** Denizen drops `BP_Key` on death
+- [ ] **8.5** `BP_LockedDoor` — opens only if key held
+- [ ] **8.6** Equipped-tool indicator on HUD
 
 ## Block 9 — Climb / ledge grab (GDD §4, §14)
 
