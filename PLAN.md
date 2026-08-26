@@ -82,17 +82,17 @@ One task = one commit. Commit message = task number + short name (e.g. `3.1 deat
 
 - [x] **8.1** `IA_Attack` (LMB) + `AM_Attack` montage plays on the Diver
 - [x] **8.2** `BP_Denizen` — `BPC_Health`, simple chase, damages on contact
-- [ ] **8.3** Attack damages the Denizen (sphere check on swing)
-- [ ] **8.4** Denizen drops `BP_Key` on death
-- [ ] **8.5** `BP_LockedDoor` — opens only if key held
-- [ ] **8.6** Equipped-tool indicator on HUD
+- [x] **8.3** Attack damages the Denizen (sphere check on swing)
+- [x] **8.4** Denizen drops `BP_Key` on death
+- [x] **8.5** `BP_LockedDoor` — opens only if key held
+- [x] **8.6** Equipped-tool indicator on HUD
 
 ## Block 9 — Climb / ledge grab (GDD §4, §14)
 
-- [ ] **9.1** `IA_Climb` (W)
-- [ ] **9.2** Forward + downward traces to detect a ledge
-- [ ] **9.3** Hang state, then mantle up
-- [ ] **9.4** Climbable surface tag/channel so only marked geometry works
+- [ ] **9.1** `IA_Climb` (W) + forward/down traces that detect a ledge, with debug drawing
+- [ ] **9.2** Snap into a hang when a ledge is found while falling
+- [ ] **9.3** Mantle up on Jump; drop off on Slide
+- [ ] **9.4** Climbable tag so only marked geometry grabs
 
 ## Block 10 — Level 1 build-out (GDD §11)
 
