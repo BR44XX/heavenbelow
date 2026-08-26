@@ -80,8 +80,8 @@ One task = one commit. Commit message = task number + short name (e.g. `3.1 deat
 
 ## Block 8 — Denizen, key, locked door (GDD §6.2, §7, §11)
 
-- [ ] **8.1** `IA_Attack` (LMB) + `AM_Attack` montage plays on the Diver
-- [ ] **8.2** `BP_Denizen` — `BPC_Health`, simple chase, damages on contact
+- [x] **8.1** `IA_Attack` (LMB) + `AM_Attack` montage plays on the Diver
+- [x] **8.2** `BP_Denizen` — `BPC_Health`, simple chase, damages on contact
 - [ ] **8.3** Attack damages the Denizen (sphere check on swing)
 - [ ] **8.4** Denizen drops `BP_Key` on death
 - [ ] **8.5** `BP_LockedDoor` — opens only if key held
