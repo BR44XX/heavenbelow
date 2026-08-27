@@ -89,10 +89,10 @@ One task = one commit. Commit message = task number + short name (e.g. `3.1 deat
 
 ## Block 9 — Climb / ledge grab (GDD §4, §14)
 
-- [ ] **9.1** `IA_Climb` (W) + forward/down traces that detect a ledge, with debug drawing
-- [ ] **9.2** Snap into a hang when a ledge is found while falling
-- [ ] **9.3** Mantle up on Jump; drop off on Slide
-- [ ] **9.4** Climbable tag so only marked geometry grabs
+- [x] **9.1** `IA_Climb` (W) + forward/down traces that detect a ledge, with debug drawing
+- [x] **9.2** Snap into a hang when a ledge is found while falling
+- [x] **9.3** Mantle up on Jump; drop off on Slide
+- [x] **9.4** Climbable tag so only marked geometry grabs
 
 ## Block 10 — Level 1 build-out (GDD §11)
 
