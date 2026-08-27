@@ -87,7 +87,7 @@ One task = one commit. Commit message = task number + short name (e.g. `3.1 deat
 - [x] **8.5** `BP_LockedDoor` — opens only if key held
 - [x] **8.6** Equipped-tool indicator on HUD
 
-## Block 9 — Climb / ledge grab (GDD §4, §14)
+## Block 9 — Climb / ledge grab (GDD §4, §14) — built, not used in Level 1
 
 - [x] **9.1** `IA_Climb` (W) + forward/down traces that detect a ledge, with debug drawing
 - [x] **9.2** Snap into a hang when a ledge is found while falling
@@ -96,8 +96,10 @@ One task = one commit. Commit message = task number + short name (e.g. `3.1 deat
 
 ## Block 10 — Level 1 build-out (GDD §11)
 
-- [ ] **10.1** Block out the full Level 1 layout (Fig. F): multiple vertical drops, no upward backtracking
-- [ ] **10.2** Forced-teaching sequence — spike jump, breakable platform drop, and a low overhead barrier over the sliding floor so it cannot be walked past (§11: teach by forced use)
+Numeric build sheet: [LEVEL1.md](LEVEL1.md)
+
+- [ ] **10.1** Block out Level 1: three enclosed 6000-unit corridors, switchbacking down. **Target: ~5 min of play**
+- [ ] **10.2** Forced-teaching pass — spike spacing, breakable-platform exit, sliding floor unavoidable (§11: teach by forced use)
 - [ ] **10.3** Denizen + key + locked door gate
 - [ ] **10.4** First tool pickup at the level end
 - [ ] **10.5** Checkpoint spacing pass + oxygen pacing pass
