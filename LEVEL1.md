@@ -13,6 +13,9 @@ affect gameplay — you are locked to Y = 0.
 
 Build one corridor, play it, then build the next.
 
+> **Where I am up to:** Corridor 1 complete. Corridor 2 shell built — next up is its **Contents** table,
+> starting with the checkpoint at `5600, 0, -625`.
+
 ---
 
 ## Corridor 1 — Z 0, run right (X 0 → 6000)
